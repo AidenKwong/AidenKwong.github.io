@@ -2,18 +2,18 @@
 import Contacts from "@components/general/Contacts.astro";
 import { IHeroProps } from "@types";
 
-const { name, tagline, highLights } = Astro.props as IHeroProps;
+import { info } from "@data";
 ---
 
 <section class="flex flex-wrap">
   <div class="lg:w-[600px]">
     <p class="dark:text-light mt-[117px]">Hey, I'm</p>
-    <h1 class="my-8 dark:text-light">{name}</h1>
+    <h1 class="my-8 dark:text-light">{info.name}</h1>
     <h2 class="text-sky-500 dark:text-emerald-400 text-xl mt-6 font-semibold">
-      {highLights}
+      {info.highLights}
     </h2>
     <h2 class="dark:text-light text-xl mb-16 mt-6">
-      {tagline}
+      {info.tagline}
     </h2>
     <Contacts />
   </div>

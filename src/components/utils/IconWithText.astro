@@ -4,7 +4,7 @@ import { Icon } from "astro-icon";
 const { pack, name, text, size } = Astro.props;
 ---
 
-<span class:list={["flex items-center", { "text-xl": size === 28 }]}>
+<span class:list={["flex items-center"]}>
   <Icon pack={pack} name={name} size={size} />
   <span>{text}</span>
 </span>

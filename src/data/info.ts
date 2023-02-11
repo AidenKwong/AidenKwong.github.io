@@ -58,8 +58,7 @@ export const info = {
   ],
 
   socialMedia: {
-    // facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    // twitter: "https://twitter.com/Uzzii_21",
+    twitter: "https://twitter.com/aidenkwong5",
     github: "https://github.com/AidenKwong",
     email: "aidenkwong5@gmail.com",
     linkedin: "https://www.linkedin.com/in/aidenkwong/",

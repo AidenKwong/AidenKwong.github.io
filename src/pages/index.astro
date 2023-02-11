@@ -1,6 +1,5 @@
 ---
 import { info } from "@data";
-
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
@@ -21,20 +20,14 @@ const featureProjects = info.projects.map((project, index) => {
 <html lang="en">
   <head>
     <MetaHead
-      title={"Portfolio"}
       description={info.about}
       ogImageUrl={"/assets/images/profile.png"}
     />
   </head>
-
   <body>
     <Layout>
-      <Hero
-        name={info.name}
-        tagline={info.tagline}
-        highLights={info.highLights}
-      />
-      <AboutMe title={"ABOUT ME"} content={info.about} />
+      <Hero />
+      <AboutMe />
       <Experience title={"WORK"} details={info.experience} />
       <Experience title={"EDUCATION"} details={info.education} />
       <Technical />
