@@ -4,6 +4,9 @@ import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import mdx from "@astrojs/mdx";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://aidenkwong.github.io/",
   integrations: [
@@ -15,5 +18,6 @@ export default defineConfig({
       entryLimit: 10000,
     }),
     robotsTxt(),
+    mdx(),
   ],
 });

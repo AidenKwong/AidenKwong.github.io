@@ -1,0 +1,43 @@
+---
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+const { title, pubDate, description, author, tags } = frontmatter;
+import MetaHead from "@components/general/MetaHead.astro";
+---
+
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Projects"}
+      description={"All projects are available in this page."}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+  <Layout>
+    <div class="flex flex-col gap-4" id="blog">
+      <h1>{title}</h1>
+      <div class="flex gap-8">
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm">
+          {pubDate.slice(0, 10)}
+        </p>
+
+        <p class="flex gap-4">
+          {
+            tags.map((tag) => (
+              <span class="text-neutral-600 dark:text-neutral-400 text-sm">
+                {tag}
+              </span>
+            ))
+          }
+        </p>
+      </div>
+
+      <p class="dark:text-light">
+        {author}
+      </p>
+      <p class="dark:text-light mb-8">{description}</p>
+      <slot />
+    </div>
+  </Layout>
+</html>

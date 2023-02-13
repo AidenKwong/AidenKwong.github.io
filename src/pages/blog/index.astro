@@ -1,0 +1,26 @@
+---
+import MetaHead from "@components/general/MetaHead.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Projects"}
+      description={"All projects are available in this page."}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+  <Layout>
+    <h2 class="mb-16">Blog</h2>
+    <ol>
+      <li class="flex gap-4">
+        <span>2023-02-11</span>
+        <a href="/blog/2023-02-11_my-favourite-tech-youtube-channels"
+          >My Favourite Tech YouTube Channels</a
+        >
+      </li>
+    </ol>
+  </Layout>
+</html>

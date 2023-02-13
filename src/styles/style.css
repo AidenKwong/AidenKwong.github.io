@@ -8,7 +8,7 @@
 /* ========== tailwind custom styles ========== */
 @layer components {
   body {
-    @apply bg-light dark:bg-dark;
+    @apply bg-light dark:bg-dark dark:text-light;
   }
   .container {
     @apply max-w-[1112px] mx-auto px-4;
@@ -30,7 +30,10 @@
   p,
   li,
   a {
-    @apply font-inter text-dark-gray;
+    @apply font-inter;
+  }
+  a {
+    @apply link;
   }
   .footer-icons {
     @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
@@ -59,5 +62,41 @@
 
   .link {
     @apply hover:text-sky-500 dark:hover:text-emerald-400;
+  }
+
+  #blog {
+    max-width: 65ch;
+  }
+
+  #blog p {
+    @apply dark:text-neutral-200;
+  }
+
+  #blog a {
+    @apply underline dark:text-neutral-200;
+  }
+  #blog ul {
+    @apply list-disc list-inside;
+  }
+
+  #blog ol {
+    @apply list-decimal list-inside;
+  }
+
+  #blog h1 {
+    @apply text-4xl text-sky-500 dark:text-emerald-400;
+  }
+
+  #blog h2 {
+    @apply text-2xl text-sky-500 dark:text-emerald-400;
+  }
+
+  #blog h3 {
+    @apply text-xl text-sky-500 dark:text-emerald-400;
+  }
+
+  #blog iframe {
+    width: 560px;
+    height: 315px;
   }
 }

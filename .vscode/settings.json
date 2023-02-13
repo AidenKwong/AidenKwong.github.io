@@ -1,0 +1,14 @@
+{
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "src/pages/blog/post-1.md"
+    },
+    {
+      "language": "plaintext",
+      "scheme": "file",
+      "pattern": "src/pages/blog/post-1.mdx"
+    }
+  ]
+}
