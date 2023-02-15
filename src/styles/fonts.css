@@ -128,3 +128,11 @@
   font-display: swap;
   src: url(/assets/fonts/Outfit/Outfit-Black.ttf) format("trueType");
 }
+
+@font-face {
+  font-family: "Matrix";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/matrix/matrix-code.ttf) format("trueType");
+}

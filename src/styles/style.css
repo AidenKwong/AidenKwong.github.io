@@ -5,6 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+canvas {
+  font-family: "Matrix";
+}
+
+* {
+  transition: background-color 300ms ease-in-out;
+}
+
 /* ========== tailwind custom styles ========== */
 @layer components {
   body {
