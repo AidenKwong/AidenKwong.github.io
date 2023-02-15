@@ -61,7 +61,7 @@
   }
 
   .link {
-    @apply hover:text-sky-500 dark:hover:text-emerald-400;
+    @apply hover:text-sky-600 dark:hover:text-emerald-400;
   }
 
   #blog {
@@ -84,15 +84,15 @@
   }
 
   #blog h1 {
-    @apply text-4xl text-sky-500 dark:text-emerald-400;
+    @apply text-4xl text-sky-600 dark:text-emerald-400;
   }
 
   #blog h2 {
-    @apply text-2xl text-sky-500 dark:text-emerald-400;
+    @apply text-2xl text-sky-600 dark:text-emerald-400;
   }
 
   #blog h3 {
-    @apply text-xl text-sky-500 dark:text-emerald-400;
+    @apply text-xl text-sky-600 dark:text-emerald-400;
   }
 
   #blog iframe {

@@ -14,7 +14,7 @@ const { title, details } = Astro.props as IExperiences;
         <div class="my-16">
           <div class="flex justify-between items-center flex-wrap">
             {title === "WORK" ? (
-              <h3 class="text-xl font-semibold text-sky-500 dark:text-emerald-400">
+              <h3 class="text-xl font-semibold text-sky-600 dark:text-emerald-400">
                 {item.name}
               </h3>
             ) : (
@@ -25,12 +25,15 @@ const { title, details } = Astro.props as IExperiences;
             </p>
           </div>
           <div class="flex gap-4 mt-3">
-            <a
-              class="text dark:text-neutral-500 link hover:underline "
-              href={item.companyUrl}
-            >
-              {item.company}
-            </a>
+            {item.companyUrl && (
+              <a
+                class="text dark:text-neutral-500 link hover:underline "
+                href={item.companyUrl}
+              >
+                {item.company}
+              </a>
+            )}
+
             <p class="dark:text-neutral-500">-</p>
             <p class="dark:text-neutral-500">{item.location}</p>
           </div>
