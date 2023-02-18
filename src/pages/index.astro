@@ -29,10 +29,12 @@ const featureProjects = info.projects.map((project, index) => {
     <Layout>
       <canvas
         id="sky-matrix"
-        class="fixed -z-10 top-0 left-0 opacity-20 block dark:hidden"></canvas>
+        class="fixed -z-10 top-0 left-0 opacity-20 block dark:hidden w-full h-screen"
+      ></canvas>
       <canvas
         id="emerald-matrix"
-        class="fixed -z-10 top-0 left-0 opacity-20 hidden dark:block"></canvas>
+        class="fixed -z-10 top-0 left-0 opacity-20 hidden dark:block w-full h-screen"
+      ></canvas>
       <Hero />
       <AboutMe />
       <Experience title={"WORK"} details={info.experience} />
@@ -49,7 +51,7 @@ const featureProjects = info.projects.map((project, index) => {
         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789$+-*/=%\"'#&_(),.:;?!\\|{}<>[]^~";
       //converting the string into an array of single characters
       const matrix = matrixStr.split("");
-      const font_size = 24;
+      const font_size = 20;
       // geting canvas by Boujjou Achraf
       const lc: HTMLCanvasElement = document.getElementById(
         "sky-matrix"
