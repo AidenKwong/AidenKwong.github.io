@@ -21,6 +21,10 @@ canvas {
   .container {
     @apply max-w-[1112px] mx-auto px-4;
   }
+
+  .accent {
+    @apply text-sky-700 dark:text-emerald-400;
+  }
   h1,
   h2,
   h3,
@@ -92,15 +96,15 @@ canvas {
   }
 
   #blog h1 {
-    @apply text-4xl text-sky-700 dark:text-emerald-400;
+    @apply text-4xl accent;
   }
 
   #blog h2 {
-    @apply text-2xl text-sky-700 dark:text-emerald-400;
+    @apply text-2xl accent;
   }
 
   #blog h3 {
-    @apply text-xl text-sky-700 dark:text-emerald-400;
+    @apply text-xl accent;
   }
 
   #blog iframe {

@@ -14,9 +14,7 @@ const { title, details } = Astro.props as IExperiences;
         <div class="my-16">
           <div class="flex justify-between items-center flex-wrap">
             {title === "WORK" ? (
-              <h3 class="text-xl font-semibold text-sky-700 dark:text-emerald-400">
-                {item.name}
-              </h3>
+              <h3 class="text-xl font-semibold accent">{item.name}</h3>
             ) : (
               <h3 class="text-xl font-semibold">{item.name}</h3>
             )}
