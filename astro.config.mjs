@@ -7,6 +7,12 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
+import partytown from "@astrojs/partytown";
+
+// https://astro.build/config
+import prefetch from "@astrojs/prefetch";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://aidenkwong.github.io/",
   integrations: [
@@ -19,5 +25,7 @@ export default defineConfig({
     }),
     robotsTxt(),
     mdx(),
+    partytown(),
+    prefetch(),
   ],
 });
