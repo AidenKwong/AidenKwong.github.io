@@ -75,7 +75,7 @@ export const info = {
     },
     {
       title: "Youtube Popular Videos Archiver",
-      description: ` A server archives global YouTube popular videos daily\nWarning: It takes some time to load the data as the backend needs cold start`,
+      description: `A server archives global YouTube popular videos daily`,
       isFeatured: true,
       thumbnail: "/assets/images/ympv.png",
       githubUrl:

@@ -6,38 +6,47 @@ import { Icon } from "astro-icon";
 ---
 
 <article
-  class="w-full max-h-[25rem] overflow-hidden relative group rounded-lg bg-neutral-100 dark:bg-neutral-800 p-4 shadow-sky-500 dark:shadow-emerald-400 shadow-lg border-sky-300 dark:border-emerald-700 border-[1px]"
+  class="flex flex-col justify-between w-full max-h-[25rem] rounded-lg bg-neutral-100 dark:bg-neutral-800 p-4 shadow-sky-500 dark:shadow-emerald-400 shadow-lg border-sky-300 dark:border-emerald-700 border-[1px]"
 >
-  <div class="flex justify-between mb-6">
-    <a href={liveUrl}>
-      <h3 class="text-2xl dark:text-light">
-        {title}
-      </h3>
-    </a>
+  <div>
+    <div class="flex justify-between">
+      <a href={liveUrl}>
+        <h3 class="text-2xl dark:text-light">
+          {title}
+        </h3>
+      </a>
+      {
+        githubUrl && (
+          <a
+            href={githubUrl}
+            aria-label={`GitHub link of ${title}`}
+            target="_blank"
+          >
+            <Icon
+              pack="mdi"
+              name="code"
+              size="40"
+              class="dark:text-light link hover:scale-110 transition-color transition-transform duration-200"
+            />
+          </a>
+        )
+      }
+    </div>
+    <p class="dark:text-light whitespace-pre-wrap mb-4">{description}</p>
     {
-      githubUrl && (
-        <a
-          href={githubUrl}
-          aria-label={`GitHub link of ${title}`}
-          target="_blank"
-        >
-          <Icon
-            pack="mdi"
-            name="code"
-            size="40"
-            class="dark:text-light link hover:scale-110 transition-color transition-transform duration-200"
-          />
-        </a>
+      title === "Youtube Popular Videos Archiver" && (
+        <p class="dark:text-light opacity-75 text-sm mb-4">
+          Warning: It takes some time to load the data as the backend needs cold
+          start
+        </p>
       )
     }
   </div>
 
-  <p class="dark:text-light mb-6">{description}</p>
-
   <a href={liveUrl}>
     <img
       src={thumbnail}
-      class="w-full h-auto"
+      class="w-full h-52 rounded object-cover object-top"
       loading="lazy"
       width="492"
       height="316"
