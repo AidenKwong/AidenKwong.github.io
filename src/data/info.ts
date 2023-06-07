@@ -80,7 +80,7 @@ export const info = {
       thumbnail: "/assets/images/ympv.png",
       githubUrl:
         "https://github.com/aidenkwong/Youtube-Popular-Video-API-Backend",
-      liveUrl: "https://ympv.live/"
+      liveUrl: "https://ympv.netlify.app/"
     },
     {
       title: "Awesome Go Package Rank",
